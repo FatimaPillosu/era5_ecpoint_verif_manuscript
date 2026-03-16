@@ -1,0 +1,958 @@
+%
+% JOURNAL ABBREVIATIONS
+%
+@STRING{AMS 	= "Amer.\ Meteor.\ Soc."}
+@STRING{AGU 	= "Amer.\ Geophys.\ Union"}
+@STRING{AIP 	= "Amer. Inst. Phys."}
+@STRING{ADGEO     = "Adv.\ Geosci."}
+@STRING{AFM       = "Agric.\ For.\ Meteor."}
+@STRING{AM        = "Ann.\ Meteor."}
+@STRING{AN        = "Astrophys.\ Norv."}		% Astrophysica Norvegica
+@STRING{AO        = "Atmos.--Ocean"}			% Atmosphere--Ocean, published by Canadian Meteorological Society (CMOS)
+@STRING{AR        = "Atmos.\ Res."}			% Atmospheric Research
+@STRING{ARFM      = "Annu.\ Rev.\ Fluid Mech."}
+@STRING{AUMET     = "Aust.\ Meteor.\ Mag."}
+@STRING{BAMS      = "Bull.\ Amer.\ Meteor.\ Soc."}
+@STRING{CAP       = "Contrib.\ Atmos.\ Phys."}
+@STRING{CC        = "Climate Change"}      % Climate Change 
+@STRING{CCH       = "Climatic Change"}			% Climatic Change
+@STRING{CDYN      = "Climate Dyn."}
+@STRING{CHAOS     = "Chaos"}
+@STRING{COL       = "Collier's"}
+@STRING{CRS       = "Cont.\ Shelf Res."}
+@STRING{DAO       = "Dyn.\ Atmos.\ Oceans"}
+@STRING{ECO       = "Ecology"}
+@STRING{EI        = "Earth Interact."}
+@STRING{GA        = "Geophysica"}			% Geophysica, published by Geophysical Society of Finland 
+@STRING{GEOMAG    = "Geophys.\ Mag."}
+@STRING{GN        = "Geophys.\ Norv."}			% Geophysica Norvegica
+@STRING{GRL       = "Geophys.\ Res.\ Lett."}
+@STRING{GEOINT    = "Geofis.\ Int."}			% Geofisica Internacional (Mexican journal -- vols. 3--5 contained proceedings from a hurricane conference
+@STRING{GEOPUB    = "Geofys.\ Publ."}
+@STRING{GPC       = "Global Planet.\ Change"}
+@STRING{HP        = "Health Phys."}
+@STRING{IAOP      = "Izv.\ Atmos.\ Ocean.\ Phys.\ (Engl.\ Transl.)"}
+@STRING{IJC       = "Int.\ J.\ Climatol."}
+@STRING{JAM       = "J.\ Appl.\ Meteor."}		% renamed to name below in 2006
+@STRING{JAMC      = "J.\ Appl.\ Meteor.\ Climatol."}  	% Journal of Applied Meteorology and Climatology (this journal used to be called the Journal of Applied Meteorology before 2006)
+@STRING{JAS       = "J.\ Atmos.\ Sci."}
+@STRING{JAOT      = "J.\ Atmos.\ Oceanic Technol."}
+@STRING{JCAM      = "J.\ Climate Appl.\ Meteor."}	% from 1983--87, now JAMC
+@STRING{JCLI      = "J.\ Climate"}
+@STRING{JCR       = "J.\ Coastal Res."}
+@STRING{JFM       = "J.\ Fluid\ Mech."}
+@STRING{JEM       = "J.\ Eng.\ Math."}			% Journal of Engineering Mathematics
+@STRING{JGR       = "J.\ Geophys.\ Res."}
+@STRING{JHM       = "J.\ Hydrometeor."}
+@STRING{JMS       = "J.\ Mar.\ Syst."}
+@STRING{JM        = "J.\ Meteor."}
+@STRING{JMR       = "J.\ Mar.\ Res."}
+@STRING{JMSJ      = "J.\ Meteor.\ Soc.\ Japan"}
+@STRING{JPO       = "J.\ Phys.\ Oceanogr."}
+@STRING{JOCEAN    = "J.\ Oceanogr."}			% Journal of Oceanography
+@STRING{JOSJ      = "J.\ Oceanogr.\ Soc.\ Japan"}
+@STRING{JSE       = "J.\ Struct.\ Eng."}	% Journal of Structural Engineering at ASCE
+@STRING{JTM       = "J.\ Tropical Meteor."}
+@STRING{JWEIA     = "J.\ Wind Eng.\ Ind.\ Aerodyn."}
+@STRING{MA        = "Meteor.\ Appl."}
+@STRING{MAP       = "Meteor.\ Atmos.\ Phys."}
+@STRING{METMON    = "Meteor.\ Monogr."}
+@STRING{METZEIT   = "Meteor.\ Z."}
+@STRING{MWL       = "Mar.\ Wea.\ Log"}
+@STRING{MWR       = "Mon.\ Wea.\ Rev."}
+@STRING{NAT       = "Nature"}
+@STRING{NHR       = "Nat.\ Hazards Rev."}
+@STRING{NWD       = "Natl.\ Weather Dig."}
+@STRING{OA        = "Oceanol. Aeta"}
+@STRING{OCEAN     = "Oceanography"}                	% a quarterly journal of The Oceanography Society
+@STRING{PAG       = "Pure Appl.\ Geophys."}
+@STRING{PF        = "Phys.\ Fluids"}
+@STRING{PHYSD     = "Physica D"}
+@STRING{PMG       = "Pap.\ Meteor.\ Geophys."}	% Papers in Meteorology and Geophysics
+@STRING{PNAS      = "Proc.\ Natl.\ Acad.\ Sci.\ (USA)"}
+@STRING{PRE       = "Phys.\ Rev.\ E"}
+@STRING{PRSA      = "Proc.\ Roy.\ Soc."}
+@STRING{PT        = "Phys.\ Today"}
+@STRING{PTRS      = "Philos.\ Trans.\ Roy.\ Soc.\ London"}
+@STRING{QJRMS     = "Quart.\ J.\ Roy.\ Meteor.\ Soc."}
+@STRING{RGEO      = "Rev. Geophys."}
+@STRING{SCI       = "Science"}
+@STRING{SOLA      = "SOLA"}				% Scientific Online Letters on the Atmosphere
+@STRING{TAGU      = "Eos, Trans.\ Amer.\ Geophys.\ Union"}
+@STRING{TELLUS    = "Tellus"}
+@STRING{TCFD      = "Theor.\ Comput.\ Fluid Dyn."}
+@STRING{WEA       = "Weather"}
+@STRING{WW        = "Weatherwise"}
+@STRING{WF        = "Wea.\ Forecasting"}
+@STRING{WMOB      = "WMO Bull."}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SAMPLE REFERENCES. Insert your own reference database below the line.
+
+@article{Acero2018,
+  author = {Acero, Francisco Javier and Parey, Sylvie and Garc{\'i}a, Jos{\'e} Agust{\'i}n and {Dacunha-Castelle}, Didier},
+  title = {Return {{Level Estimation}} of {{Extreme Rainfall}} over the {{Iberian Peninsula}}: {{Comparison}} of {{Methods}}},
+  journal = {Water},
+  volume = {10},
+  number = {2},
+  year = 2018,
+  doi = {10.3390/w10020179},
+}
+
+@article{Ahmed2023,
+  author = {Ahmed, Ali and Yildirim, Gokhan and Haddad, Khaled and Rahman, Ataur},
+  title = {Regional {{Flood Frequency Analysis}}: {{A Bibliometric Overview}}},
+  journal = {Water},
+  volume = {15},
+  number = {9},
+  year = 2023,
+  doi = {10.3390/w15091658},
+}
+
+@article{Alexandridis2023,
+  author = {Alexandridis, V. and Stefanidis, S. and Dafis, S.},
+  title = {Evaluation of ERA5 and ERA5-Land Reanalysis Precipitation Data with Rain Gauge Observations in Greece},
+  journal = {Environmental Sciences Proceedings},
+  volume = {26},
+  number = {1},
+  pages = {104},
+  year = {2023},
+  doi = {10.3390/ENVIRONSCIPROC2023026104}
+}
+
+@article{Anand2020,
+  author = {Anand, B. and Karunanidhi, D.},
+  title = {Long-term spatial and temporal rainfall trend analysis using GIS and statistical methods in Lower Bhavani basin, Tamil Nadu, India},
+  journal = {Indian Journal of Geo-Marine Sciences},
+  volume = {49},
+  number = {3},
+  pages = {419--427},
+  year = {2020}
+}
+
+@article{AnthanahalliNanjegowda2022,
+  author = {Anthanahalli Nanjegowda, R. and Kulamulla Parambath, S.},
+  title = {A novel bias correction method for extreme rainfall events based on L-moments},
+  journal = {International Journal of Climatology},
+  volume = {42},
+  number = {1},
+  pages = {250--264},
+  year = {2022},
+  doi = {10.1002/JOC.7242}
+}
+
+@article{Asadieh2015,
+  author = {Asadieh, B. and Krakauer, N. Y.},
+  title = {Global trends in extreme precipitation: Climate models versus observations},
+  journal = {Hydrology and Earth System Sciences},
+  volume = {19},
+  number = {2},
+  pages = {877--891},
+  year = {2015},
+  doi = {10.5194/HESS-19-877-2015}
+}
+
+@article{Balasundram2023,
+  author = {Balasundram, S. K. and Shamshiri, R. R. and Sridhara, S. and Rizan, N.},
+  title = {The Role of Digital Agriculture in Mitigating Climate Change and Ensuring Food Security: An Overview},
+  journal = {Sustainability},
+  volume = {15},
+  number = {6},
+  year = {2023},
+  doi = {10.3390/SU15065325}
+}
+
+@article{Bechtold2014,
+  author = {Bechtold, Peter and Semane, Noureddine and Lopez, Philippe and Chaboureau, Jean Pierre and Beljaars, Anton and Bormann, Niels},
+  title = {Representing Equilibrium and Nonequilibrium Convection in Large-Scale Models},
+  journal = {Journal of the Atmospheric Sciences},
+  volume = {71},
+  number = {2},
+  pages = {734--753},
+  year = 2014,
+  doi = {10.1175/JAS-D-13-0163.1}}
+}
+
+@article{Boe2007,
+  author = {Boé, J. and Terray, L. and Habets, F. and Martin, E.},
+  title = {Statistical and dynamical downscaling of the Seine basin climate for hydro-meteorological studies},
+  journal = {International Journal of Climatology},
+  volume = {27},
+  number = {12},
+  pages = {1643--1655},
+  year = {2007},
+  doi = {10.1002/joc.1602}
+}
+
+@article{Bottazzi2024,
+  author={Bottazzi, Michele and Rodr{\'\i}guez-Mu{\~n}oz, Luc{\'\i}a and Chiavarini, Beatrice and Caroli, Cinzia and Trotta, Giuseppe and Dellacasa, Chiara and Marras, Gian Franco and Montanari, Margherita and Santini, Monia and Mancini, Marco and others},
+  title={High performance computing to support land, climate, and user-oriented services: The HIGHLANDER Data Portal},
+  journal={Meteorological Applications},
+  volume={31},
+  number={2},
+  pages={e2166},
+  year={2024},
+  doi={10.1002/met.2166}
+}
+
+@article{Chai2014,
+  author = {Chai, T. and Draxler, R. R.},
+  title = {Root mean square error (RMSE) or mean absolute error (MAE)? -Arguments against avoiding RMSE in the literature},
+  journal = {Geoscientific Model Development},
+  volume = {7},
+  number = {3},
+  pages = {1247--1250},
+  year = {2014},
+  doi = {10.5194/GMD-7-1247-2014}
+}
+
+@incollection{Coles2001,
+  title = {Threshold {{Models}}},
+  booktitle = {An {{Introduction}} to {{Statistical Modeling}} of {{Extreme Values}}},
+  author = {Coles, Stuart},
+  pages = {74--91},
+  publisher = {Springer},
+  doi = {10.1007/978-1-4471-3675-0_4},
+  year = 2001,
+}
+
+@article{Cuo2011,
+  author = {Cuo, L. and Pagano, T. C. and Wang, Q. J.},
+  title = {A Review of Quantitative Precipitation Forecasts and Their Use in Short- to Medium-Range Streamflow Forecasting},
+  journal = {Journal of Hydrometeorology},
+  volume = {12},
+  number = {5},
+  pages = {713--728},
+  year = {2011},
+  doi = {10.1175/2011JHM1347.1}
+}
+
+@article{DiCurzio2022,
+  author = {Di Curzio, D. and Di Giovanni, A. and Lidori, R. and Montopoli, M. and Rusi, S.},
+  title = {Comparing Rain Gauge and Weather RaDAR Data in the Estimation of the Pluviometric Inflow from the Apennine Ridge to the Adriatic Coast (Abruzzo Region, Central Italy)},
+  journal = {Hydrology},
+  volume = {9},
+  number = {12},
+  pages = {225},
+  year = {2022},
+  doi = {10.3390/HYDROLOGY9120225}
+}
+
+@article{Donat2016,
+  author = {Donat, M. G. and Alexander, L. V. and Herold, N. and Dittus, A. J.},
+  title = {Temperature and precipitation extremes in century-long gridded observations, reanalyses, and atmospheric model simulations},
+  journal = {Journal of Geophysical Research},
+  volume = {121},
+  number = {19},
+  pages = {11174--11189},
+  year = {2016},
+  doi = {10.1002/2016JD025480}
+}
+
+@article{Doocy2013,
+  author = {Doocy, S. and Daniels, A. and Murray, S. and Kirsch, T. D.},
+  title = {The Human Impact of Floods: A Historical Review of Events 1980-2009 and Systematic Literature Review},
+  journal = {PLoS Currents},
+  year = {2013},
+  doi = {10.1371/CURRENTS.DIS.F4DEB457904936B07C09DAA98EE8171A}
+}
+
+@article{Engmann2011,
+  author = {Engmann, S. and Cousineau, D.},
+  title = {Comparing distributions: The Two-Sample Anderson-Darling Test as an Alternative to the Kolmogorov-Smirnoff Test},
+  journal = {Journal of Applied Quantitative Methods},
+  volume = {6},
+  number = {3},
+  year = {2011},
+  url = {https://jaqm.ro/issues/volume-6,issue-3/1_engmann_cousineau.php}
+}
+
+@article{Ensor2008,
+  author = {Ensor, L. A. and Robeson, S. M.},
+  title = {Statistical Characteristics of Daily Precipitation: Comparisons of Gridded and Point Datasets},
+  journal = {Journal of Applied Meteorology and Climatology},
+  volume = {47},
+  number = {9},
+  pages = {2468--2476},
+  year = {2008},
+  doi = {10.1175/2008JAMC1757.1}
+}
+
+@article{Espinosa2024,
+  author = {Espinosa, L. A. and Portela, M. M. and Gharbia, S.},
+  title = {Assessing Changes in Exceptional Rainfall in Portugal Using ERA5-Land Reanalysis Data (1981/1982–2022/2023)},
+  journal = {Water},
+  volume = {16},
+  number = {5},
+  pages = {628},
+  year = {2024},
+  doi = {10.3390/W16050628}
+}
+
+@article{Fowler2021,
+  author = {Fowler, H. J. and Lenderink, G. and Prein, A. F. and Westra, S. and Allan, R. P. and Ban, N. and Barbero, R. and Berg, P. and Blenkinsop, S. and Do, H. X. and Guerreiro, S. and Haerter, J. O. and Kendon, E. J. and Lewis, E. and Schaer, C. and Sharma, A. and Villarini, G. and Wasko, C. and Zhang, X.},
+  title = {Anthropogenic intensification of short-duration rainfall extremes},
+  journal = {Nature Reviews Earth \& Environment},
+  volume = {2},
+  number = {2},
+  pages = {107--122},
+  year = {2021},
+  doi = {10.1038/s43017-020-00128-6}
+}
+
+@article{Gimeno2022,
+  author = {Gimeno, L. and Sorí, R. and Vázquez, M. and Stojanovic, M. and Algarra, I. and Eiras-Barca, J. and Gimeno-Sotelo, L. and Nieto, R.},
+  title = {Extreme precipitation events},
+  journal = {Wiley Interdisciplinary Reviews: Water},
+  volume = {9},
+  number = {6},
+  year = {2022},
+  doi = {10.1002/WAT2.1611}
+}
+
+@article{Giorgos2024,
+  author = {Giorgos, N. and Nastos, P. T. and Kapsomenakis, Y.},
+  title = {Creating High-Resolution Precipitation and Extreme Precipitation Indices Datasets by Downscaling and Improving on the ERA5 Reanalysis Data over Greece},
+  journal = {Eng},
+  volume = {5},
+  number = {3},
+  pages = {1885--1904},
+  year = {2024},
+  doi = {10.3390/ENG5030101}
+}
+
+@article{Gober2008,
+  author = {G{\"o}ber, Martin and Zs{\'o}t{\'e}r, Ervin and Richardson, David S.},
+  title = {Could a Perfect Model Ever Satisfy a Na\"ive Forecaster? {{On}} Grid Box Mean versus Point Verification},
+  journal = {Meteorological Applications},
+  volume = {15},
+  number = {3},
+  pages = {359--365},
+  year = 2008,
+  doi = {10.1002/met.78},
+}
+
+@article{GomisCebolla2023,
+  author = {Gomis-Cebolla, J. and Rattayova, V. and Salazar-Galán, S. and Francés, F.},
+  title = {Evaluation of ERA5 and ERA5-Land reanalysis precipitation datasets over Spain (1951–2020)},
+  journal = {Atmospheric Research},
+  volume = {284},
+  year = {2023},
+  doi = {10.1016/J.ATMOSRES.2023.106606}
+}
+
+@article{Guan2022,
+  author = {Guan, Hong and Zhu, Yuejian and Sinsky, Eric and Fu, Bing and Li, Wei and Zhou, Xiaqiong and Xue, Xianwu and Hou, Dingchen and Peng, Jiayi and Nageswararao, M. M. and Tallapragada, Vijay and Hamill, Thomas M. and Whitaker, Jeffrey S. and Bates, Gary and Pegion, Philip and Frederick, Sherrie and Rosencrans, Matthew and Kumar, Arun},
+  title = {{{GEFSv12 Reforecast Dataset}} for {{Supporting Subseasonal}} and {{Hydrometeorological Applications}}},
+  journal = {Monthly Weather Review},
+  volume = {150},
+  number = {3},
+  pages = {647--665},
+  year = 2022,
+  doi = {10.1175/MWR-D-21-0245.1},
+}
+
+
+@article{Gudmundsson2012,
+  author = {Gudmundsson, L. and Bremnes, J. B. and Haugen, J. E. and Engen-Skaugen, T.},
+  title = {Technical Note: Downscaling RCM precipitation to the station scale using statistical transformations - a comparison of methods},
+  journal = {Hydrology and Earth System Sciences},
+  volume = {16},
+  number = {9},
+  pages = {3383--3390},
+  year = {2012},
+  doi = {10.5194/hess-16-3383-2012}
+}
+
+@article{Gupta2020,
+  author = {Gupta, V. and Jain, M. K. and Singh, P. K. and Singh, V.},
+  title = {An assessment of global satellite-based precipitation datasets in capturing precipitation extremes: A comparison with observed precipitation dataset in India},
+  journal = {International Journal of Climatology},
+  volume = {40},
+  number = {8},
+  pages = {3667--3688},
+  year = {2020},
+  doi = {10.1002/JOC.6419}
+}
+
+@article{Haiden2016,
+  author = {Haiden, T. and Duffy, S.},
+  title = {Use of high-density observations in precipitation verification},
+  journal = {ECMWF Newsletter},
+  number = {147},
+  pages = {20--25},
+  year = {2016},
+  doi = {10.21957/hsacrdem}
+}
+
+@article{Haiden2025,
+  author = {Haiden, T. and Janousek, Martin and Vitart, Fr{\'e}d{\'e}ric and Prates, Fernando and {Maier-Gerber}, Michael and Li, Cathy Wing Yi and Chevallier, Matthieu},
+  title = {Evaluation of {{ECMWF}} Forecasts},
+  journal = {ECMWF Technical Memoranda},
+  volume = {931},
+  year = 2025,
+  doi = {10.21957/51e665e5c8}
+}
+
+@article{Haile2020,
+  author = {Haile, G. G. and Tang, Q. and Hosseini-Moghari, S. M. and Liu, X. and Gebremicael, T. G. and Leng, G. and Kebede, A. and Xu, X. and Yun, X.},
+  title = {Projected Impacts of Climate Change on Drought Patterns Over East Africa},
+  journal = {Earth’s Future},
+  volume = {8},
+  number = {7},
+  year = {2020},
+  doi = {10.1029/2020EF001502}
+}
+
+@article{Hamill2022,
+  author = {Hamill, T. M. and Whitaker, J. S. and Shlyaeva, A. and Bates, G. and Fredrick, S. and Pegion, P. and Sinsky, E. and Zhu, Y. and Tallapragada, V. and Guan, H. and Zhou, X. and Woollen, J.},
+  title = {The Reanalysis for the Global Ensemble Forecast System, Version 12},
+  journal = {Monthly Weather Review},
+  volume = {150},
+  number = {1},
+  pages = {59--79},
+  year = {2022},
+  doi = {10.1175/MWR-D-21-0023.1}
+}
+
+@article{Heinrich2024,
+  author = {Heinrich, D. and Stephens, E. and Coughlan de Perez, E.},
+  title = {More than Magnitude: Towards a multidimensional understanding of unprecedented weather to better support disaster management},
+  journal = {Water Security},
+  volume = {23},
+  pages = {100181},
+  year = {2024},
+  doi = {10.1016/J.WASEC.2024.100181}
+}
+
+@article{Herold2017,
+  author = {Herold, N. and Behrangi, A. and Alexander, L. V.},
+  title = {Large uncertainties in observed daily precipitation extremes over land},
+  journal = {Journal of Geophysical Research: Atmospheres},
+  volume = {122},
+  number = {2},
+  pages = {668--681},
+  year = {2017},
+  doi = {10.1002/2016JD025842}
+}
+
+@article{Hersbach2020,
+  author = {Hersbach, H. and Bell, B. and Berrisford, P. and Hirahara, S. and Horányi, A. and Muñoz-Sabater, J. and Nicolas, J. and Peubey, C. and Radu, R. and Schepers, D. and Simmons, A. and Soci, C. and Abdalla, S. and Abellan, X. and Balsamo, G. and Bechtold, P. and Biavati, G. and Bidlot, J. and Bonavita, M. and … Thépaut, J. N.},
+  title = {The ERA5 global reanalysis},
+  journal = {Quarterly Journal of the Royal Meteorological Society},
+  volume = {146},
+  number = {730},
+  pages = {1999--2049},
+  year = {2020},
+  doi = {10.1002/qj.3803}
+}
+
+@article{Hewson2024,
+  author = {Hewson, T.},
+  title = {Capturing extreme rainfall events},
+  journal = {ECMWF Newsletter},
+  number = {178},
+  year = {2024}
+}
+
+@article{Hewson2024_2,
+  author = {Hewson, T. and Ashoor, A. and Bousetta, S. and Emanual, K. and Lagouvardos, K. and Lavers, D. and Magnusson, L. and Pillosu, F. and Zsoter, E.},
+  title = {Medicane Daniel: an extraordinary cyclone with devastating impacts},
+  journal = {ECMWF Newsletter},
+  number = {179},
+  year = {2024},
+  doi = {10.21957/th3wxk861d}
+}
+
+@article{Hewson2024_3,
+  author = {Hewson, T. and Chevallier, M.},
+  title = {Use and Verification of ECMWF products},
+  journal = {ECMWF Technical Memoranda},
+  number = {919},
+  year = {2024},
+  doi = {10.21957/734d5d4d39}
+}
+
+@article{HewsonPillosu2021,
+  author = {Hewson, T. and Pillosu, F.},
+  title = {A low-cost post-processing technique improves weather forecasts around the world},
+  journal = {Communications Earth and Environment},
+  volume = {2},
+  number = {1},
+  year = {2021},
+  doi = {10.1038/s43247-021-00185-9}
+}
+
+@article{Hewson2023,
+  author = {Hewson, T. and Pillosu, F. and Gascòn, E. and Vučković, M.},
+  title = {Post-processing ERA5 output with ecPoint},
+  journal = {ECMWF Newsletter},
+  number = {176},
+  year = {2023}
+}
+
+@book{Hosking1997,
+  author = {Hosking, J. R. M. and Wallis, James R.},
+  title = {Regional {{Frequency Analysis}}: {{An Approach Based}} on {{L-Moments}}},
+  publisher = {Cambridge University Press},
+  address = {Cambridge},
+  doi = {10.1017/CBO9780511529443},
+  year = 1997,
+}
+
+@article{Hossain2024,
+  author = {Hossain, I. and Gato-Trinidad, S. and Imteaz, M. and Rayburg, S.},
+  title = {Future Scenarios of Design Rainfall Due to Upcoming Climate Changes in NSW, Australia},
+  journal = {Atmosphere},
+  volume = {15},
+  number = {9},
+  pages = {1101},
+  year = {2024},
+  doi = {10.3390/ATMOS15091101}
+}
+
+@book{IPCC2023,
+  author = {IPCC},
+  title = {Climate Change 2023: Synthesis Report. Contribution of Working Groups I, II and III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change},
+  publisher = {IPCC},
+  address = {Geneva, Switzerland},
+  year = {2023},
+  pages = {35--115},
+  doi = {10.59327/IPCC/AR6-9789291691647}
+}
+
+@article{Janmohammadi2023,
+  author = {Janmohammadi, M. and Sabaghnia, N.},
+  title = {Strategies to alleviate the unusual effects of climate change on crop production: a thirsty and warm future, low crop quality. A review},
+  journal = {Biologija},
+  volume = {69},
+  number = {2},
+  pages = {121--133},
+  year = {2023},
+  doi = {10.6001/BIOLOGIJA.2023.69.2.1}
+}
+
+@article{Janssen2000,
+  author = {Janssen, A.},
+  title = {Global Power Functions of Goodness of Fit Tests},
+  journal = {The Annals of Statistics},
+  volume = {28},
+  number = {1},
+  pages = {239--253},
+  year = {2000}
+}
+
+@book{Jolliffe2011,
+  author = {Jolliffe, I. T. and Stephenson, D. B.},
+  title = {Forecast Verification: A Practitioner’s Guide in Atmospheric Science},
+  publisher = {John Wiley \& Sons, Ltd.},
+  edition = {2nd},
+  year = {2011},
+  doi = {10.1002/9781119960003}
+}
+
+@article{Kalnay1996,
+  author = {Kalnay, E. and Kanamitsu, M. and Kistler, R. and Collins, W. and Deaven, D. and Gandin, L. and Iredell, M. and Saha, S. and White, G. and Woollen, J. and Zhu, Y. and Chelliah, M. and Ebisuzaki, W. and Higgins, W. and Janowiak, J. and Mo, K. C. and Ropelewski, C. and Wang, J. and Leetmaa, A. and … Joseph, D.},
+  title = {The NCEP/NCAR 40-Year Reanalysis Project},
+  journal = {Bulletin of the American Meteorological Society},
+  volume = {77},
+  pages = {437--472},
+  year = {1996},
+  doi = {10.1175/1520-0477(1996)077<0437:TNYRP>2.0.CO;2}
+}
+
+@article{Khaliq2006,
+  author = {Khaliq, M. N. and Ouarda, T. B. M. J. and Ondo, J. -C. and Gachon, P. and Bob{\'e}e, B.},
+  title = {Frequency Analysis of a Sequence of Dependent and/or Non-Stationary Hydro-Meteorological Observations: {{A}} Review},
+  year = 2006,
+  journal = {Journal of Hydrology},
+  volume = {329},
+  number = {3},
+  pages = {534--552},
+  doi = {10.1016/j.jhydrol.2006.03.004},
+}
+
+
+@article{Kidd2017,
+  author = {Kidd, C. and Becker, A. and Huffman, G. J. and Muller, C. L. and Joe, P. and Skofronick-Jackson, G. and Kirschbaum, D. B.},
+  title = {So, how much of the Earth’s surface is covered by rain gauges?},
+  journal = {Bulletin of the American Meteorological Society},
+  volume = {98},
+  number = {1},
+  pages = {69--78},
+  year = {2017},
+  doi = {10.1175/BAMS-D-14-00283.1}
+}
+
+@article{Kim2025,
+  author = {Kim, Sunghun and Sung, Kyungmin and Shin, Ju-Young and Heo, Jun-Haeng},
+  title = {At-{{Site Versus Regional Frequency Analysis}} of {{Sub-Hourly Rainfall}} for {{Urban Hydrology Applications During Recent Extreme Events}}},
+  journal = {Water},
+  volume = {17},
+  number = {15},
+  year = 2025,
+  doi = {10.3390/w17152213},
+}
+
+@article{Kirk1996,
+  author = {Kirk, R. E.},
+  title = {Practical Significance: A Concept Whose Time Has Come},
+  journal = {Educational and Psychological Measurement},
+  volume = {56},
+  number = {5},
+  pages = {746--759},
+  year = {1996},
+  doi = {10.1177/0013164496056005002}
+}
+
+@article{Kochendorfer_2020,
+  author = {Kochendorfer, John and Earle, Michael E. and Hodyss, Daniel and Reverdin, Audrey and Roulet, Yves-Alain and Nitu, Rodica and Rasmussen, Roy and Landolt, Scott and Buis{\'a}n, Samuel and Laine, Timo},
+  title = {Undercatch {{Adjustments}} for {{Tipping-Bucket Gauge Measurements}} of {{Solid Precipitation}}},
+  journal = {Journal of Hydrometeorology},
+  volume = {21},
+  number = {6},
+  pages = {1193--1205},
+  year = 2020,
+  doi = {10.1175/JHM-D-19-0256.1},
+}
+
+@article{Lamprecht2021,
+  author = {Lamprecht, A. and Rutzinger, M. and Pauli, H. and Bardy-Durchhalter, M. and Euller, K. and Niederheiser, R. and Steinbauer, K. and Wilfing, K. and Erschbamer, B. and Calzado, R. F. and Cecco, V. Di and Gattringer, A. and Kazakis, G. and Mallaun, M. and Mesa, J. M. and Moser, D. and Remoundou, H. and Stanisci, A. and Theurillat, J.-P. and … Winkler, M.},
+  title = {Disentangling anthropogenic drivers of climate change impacts on alpine plant species: Alps vs. Mediterranean mountains. Final report},
+  journal = {Earth System Sciences (ESS)},
+  year = {2021},
+  pages = {1--72},
+  doi = {10.1553/ESS-MEDIALPSS1}
+}
+
+@article{LanzaStagi2008,
+  author = {Lanza, L. G. and Stagi, L.},
+  title = {Certified accuracy of rainfall data as a standard requirement in scientific investigations},
+  journal = {Advances in Geosciences},
+  volume = {16},
+  pages = {43--48},
+  year = {2008},
+  doi = {10.5194/ADGEO-16-43-2008}
+}
+
+@article{Laouacheria2019,
+  author = {Laouacheria, F. and Kechida, S. and Chabi, M.},
+  title = {Modelling the impact of design rainfall on the urban drainage system by Storm Water Management Model},
+  journal = {Journal of Water and Land Development},
+  volume = {40},
+  number = {1},
+  pages = {119--125},
+  year = {2019},
+  doi = {10.2478/JWLD-2019-0013}
+}
+
+@article{Lavers2021,
+  author = {Lavers, David A. and Harrigan, Shaun and Prudhomme, Christel},
+  title = {Precipitation Biases in the {{ECMWF}} Integrated Forecasting System},
+  journal = {Journal of Hydrometeorology},
+  volume = {22},
+  number = {5},
+  pages = {1315--1334},
+  year = 2021,
+  doi = {10.1175/jhm-d-20-0308.1},
+}
+
+@article{Lavers2022,
+  author = {Lavers, D. A. and Simmons, A. and Vamborg, F. and Rodwell, M. J.},
+  title = {An evaluation of ERA5 precipitation for climate monitoring},
+  journal = {Quarterly Journal of the Royal Meteorological Society},
+  volume = {148},
+  number = {748},
+  pages = {3152--3165},
+  year = {2022},
+  doi = {10.1002/QJ.4351}
+}
+
+@article{Liang2022,
+  author = {Liang, X. Z.},
+  title = {Extreme rainfall slows the global economy},
+  journal = {Nature},
+  volume = {601},
+  number = {7892},
+  pages = {193--194},
+  year = {2022},
+  doi = {10.1038/d41586-021-03783-x}
+}
+
+@article{Ludwig2023,
+  author = {Ludwig, P. and Ehmele, F. and Franca, M. J. and Mohr, S. and Caldas-Alvarez, A. and Daniell, J. E. and Ehret, U. and Feldmann, H. and Hundhausen, M. and Knippertz, P. and Küpfer, K. and Kunz, M. and Mühr, B. and Pinto, J. G. and Quinting, J. and Schäfer, A. M. and Seidel, F. and Wisotzky, C.},
+  title = {A multi-disciplinary analysis of the exceptional flood event of July 2021 in central Europe - Part 2: Historical context and relation to climate change},
+  journal = {Natural Hazards and Earth System Sciences},
+  volume = {23},
+  number = {4},
+  pages = {1287--1311},
+  year = {2023},
+  doi = {10.5194/NHESS-23-1287-2023}
+}
+
+@article{Maurya2024,
+  author = {Maurya, S. K. and Kalhapure, A. and Verma, V. K. and Tiwari, A. and Chaubey, C. and Maurya, D. K. and Kumar, M.},
+  title = {Irrigation Scheduling and Cultivar Management for Increasing Water Productivity under Dryland Condition: A Review},
+  journal = {International Journal of Environment and Climate Change},
+  volume = {14},
+  number = {1},
+  pages = {461--470},
+  year = {2024},
+  doi = {10.9734/IJECC/2024/V14I13856}
+}
+
+@article{Merz2024,
+  author = {Merz, B. and Nguyen, V. D. and Guse, B. and Han, L. and Guan, X. and Rakovec, O. and Samaniego, L. and Ahrens, B. and Vorogushyn, S.},
+  title = {Spatial counterfactuals to explore disastrous flooding},
+  journal = {Environmental Research Letters},
+  volume = {19},
+  number = {4},
+  year = {2024},
+  doi = {10.1088/1748-9326/AD22B9}
+}
+
+@article{Min2011,
+  author = {Min, S. K. and Zhang, X. and Zwiers, F. W. and Hegerl, G. C.},
+  title = {Human contribution to more-intense precipitation extremes},
+  journal = {Nature},
+  volume = {470},
+  number = {7334},
+  pages = {378--381},
+  year = {2011},
+  doi = {10.1038/nature09763}
+}
+
+@article{MunozSabater2021,
+  author = {Muñoz-Sabater, J. and Dutra, E. and Agustí-Panareda, A. and Albergel, C. and Arduini, G. and Balsamo, G. and Boussetta, S. and Choulga, M. and Harrigan, S. and Hersbach, H. and Martens, B. and Miralles, D. G. and Piles, M. and Rodríguez-Fernández, N. J. and Zsoter, E. and Buontempo, C. and Thépaut, J. N.},
+  title = {ERA5-Land: A state-of-the-art global reanalysis dataset for land applications},
+  journal = {Earth System Science Data},
+  volume = {13},
+  number = {9},
+  pages = {4349--4383},
+  year = {2021},
+  doi = {10.5194/ESSD-13-4349-2021}
+}
+
+@article{Ommer2024,
+  author = {Ommer, J. and Neumann, J. and Kalas, M. and Blackburn, S. and Cloke, H. L.},
+  title = {Surprise floods: The role of our imagination in preparing for disasters},
+  journal = {Natural Hazards and Earth System Sciences},
+  volume = {24},
+  number = {8},
+  pages = {2633--2646},
+  year = {2024},
+  doi = {10.5194/NHESS-24-2633-2024}
+}
+
+@article{Osei2021,
+  author = {Osei, Marian Amoakowaah and Amekudzi, Leonard Kofitse and {Omari-Sasu}, Akoto Yaw and Yamba, Edmund Ilimoan and Quansah, Emmanuel and Aryee, Jeffrey N. A. and Preko, Kwasi},
+  title = {Estimation of the Return Periods of Maxima Rainfall and Floods at the {{Pra River Catchment}}, {{Ghana}}, {{West Africa}} Using the {{Gumbel}} Extreme Value Theory},
+  journal = {Heliyon},
+  volume = {7},
+  number = {5},
+  year = 2021,
+  doi = {10.1016/j.heliyon.2021.e06980},
+}
+
+@article{Pan2022,
+  author = {Pan, Xiao and Rahman, Ataur and Haddad, Khaled and Ouarda, Taha B. M. J.},
+  title = {Peaks-over-Threshold Model in Flood Frequency Analysis: A Scoping Review},
+  journal = {Stochastic Environmental Research and Risk Assessment},
+  volume = {36},
+  number = {9},
+  pages = {2419--2435},
+  year = 2022,
+  doi = {10.1007/s00477-022-02174-6},
+}
+
+@article{Pillosu2025,
+  author = {Pillosu, F. M. and Hewson, T. and Stephens, E. and Prudhomme, Christel and Cloke, Hannah},
+  title = {Does a Multivariate Approach Enhance Univariate Grid-to-Point Post-Processed Rainfall Forecasts? {{A}} Comparative Analysis},
+  journal = {ECMWF Technical Memoranda},
+  volume = {924},
+  pages = {1--21},
+  year = 2025,
+  doi = {10.21957/eb6c62b7af},
+}
+
+@article{Pollock_2018,
+  author = {Pollock, M. D. and O'Donnell, G. and Quinn, P. and Dutton, M. and Black, A. and Wilkinson, M. E. and Colli, M. and Stagnaro, M. and Lanza, L. G. and Lewis, E. and Kilsby, C. G. and O'Connell, P. E.},
+  title = {Quantifying and {{Mitigating Wind-Induced Undercatch}} in {{Rainfall Measurements}}},
+  journal = {Water Resources Research},
+  volume = {54},
+  number = {6},
+  pages = {3863--3875},
+  year = 2018,
+  doi = {10.1029/2017WR022421},
+}
+
+@article{Richardson2014,
+  author = {Richardson, D. and Hemri, S. and Bogner, K. and Gneiting, T. and Haiden, T. and Pappenberger, F. and Scheuerer, M.},
+  title = {Calibration of ECMWF forecasts},
+  journal = {ECMWF Newsletter},
+  number = {142},
+  year = {2014},
+  url = {https://doi.org/10.21957/45t3o8fj}
+}
+
+@article{Satge2020,
+  author = {Satgé, F. and Defrance, D. and Sultan, B. and Bonnet, M. P. and Seyler, F. and Rouché, N. and Pierron, F. and Paturel, J. E.},
+  title = {Evaluation of 23 gridded precipitation datasets across West Africa},
+  journal = {Journal of Hydrology},
+  volume = {581},
+  pages = {124412},
+  year = {2020},
+  doi = {10.1016/J.JHYDROL.2019.124412}
+}
+
+@article{Scarrott2012,
+  author = {Scarrott, Carl and MacDonald, Anna},
+  title = {A {{Review}} of {{Extreme Value Threshold Estimation}} and {{Uncertainty Quantification}}},
+  journal = {REVSTAT-Statistical Journal},
+  volume = {10},
+  number = {1},
+  pages = {33--60},
+  year = 2012,
+  doi = {10.57805/revstat.v10i1.110},
+}
+
+@article{Schumacher2017,
+  author = {Schumacher, R. S.},
+  title = {Heavy Rainfall and Flash Flooding},
+  journal = {Oxford Research Encyclopedia of Natural Hazard Science},
+  volume = {1},
+  year = {2017},
+  doi = {10.1093/acrefore/9780199389407.013.132}
+}
+
+@article{Stephens1974,
+  author = {Stephens, M. A.},
+  title = {EDF Statistics for Goodness of Fit and Some Comparisons},
+  journal = {Journal of the American Statistical Association},
+  volume = {69},
+  number = {347},
+  pages = {730},
+  year = {1974},
+  doi = {10.2307/2286009}
+}
+
+@article{Tabari2020,
+  author = {Tabari, H.},
+  title = {Climate change impact on flood and extreme precipitation increases with water availability},
+  journal = {Scientific Reports},
+  volume = {10},
+  number = {1},
+  pages = {1--10},
+  year = {2020},
+  doi = {10.1038/s41598-020-70816-2}
+}
+
+@article{Tadeyo2020,
+  author = {Tadeyo, E. and Chen, D. and Ayugi, B. and Yao, C.},
+  title = {Characterization of spatio-temporal trends and periodicity of precipitation over Malawi during 1979-2015},
+  journal = {Atmosphere},
+  volume = {11},
+  number = {9},
+  year = {2020},
+  doi = {10.3390/ATMOS11090891}
+}
+
+@article{Tie2023,
+  author = {Tie, J. and Kim, S. and Sharma, A.},
+  title = {How does increasing temperature affect the sub-annual distribution of monthly rainfall?},
+  journal = {Environmental Research: Climate},
+  volume = {2},
+  number = {1},
+  year = {2023},
+  doi = {10.1088/2752-5295/ACB5B9}
+}
+
+@article{Tye2022,
+  author = {Tye, M. R. and Dagon, K. and Molina, M. J. and Richter, J. H. and Visioni, D. and Kravitz, B. and Tilmes, S.},
+  title = {Indices of extremes: geographic patterns of change in extremes and associated vegetation impacts under climate intervention},
+  journal = {Earth System Dynamics},
+  volume = {13},
+  number = {3},
+  pages = {1233--1257},
+  year = {2022},
+  doi = {10.5194/ESD-13-1233-2022}
+}
+
+@article{Vannitsem2021,
+  author = {Vannitsem, S. and Bremnes, J. B. and Demaeyer, J. and Evans, G. R. and Flowerdew, J. and Hemri, S. and Lerch, S. and Roberts, N. and Theis, S. and Atencia, A. and Bouallègue, Z. Ben and Bhend, J. and Dabernig, M. and de Cruz, L. and Hieta, L. and Mestre, O. and Moret, L. and Plenković, I. O. and Schmeits, M. and … Ylhaisi, J.},
+  title = {Statistical postprocessing for weather forecasts review, challenges, and avenues in a big data world},
+  journal = {Bulletin of the American Meteorological Society},
+  volume = {102},
+  number = {3},
+  pages = {E681--E699},
+  year = {2021},
+  doi = {10.1175/BAMS-D-19-0308.1}
+}
+
+@article{Wang2023,
+  title = {Traditional and {{Novel Methods}} of {{Rainfall Observation}} and {{Measurement}}: {{A Review}}},
+  author = {Wang, Xing and Shi, Shuaiyi and Zhu, Litao and Nie, Yunfeng and Lai, Guojun},
+  year = 2023,
+  journal = {Journal of Hydrometeorology},
+  volume = {24},
+  number = {12},
+  pages = {2153--2176},
+  doi = {10.1175/JHM-D-22-0122.1},
+}
+
+@article{WangKarimi2022,
+  title = {Impact of spatial distribution information of rainfall in runoff simulation using deep learning method},
+  author = {Wang, Y. and Karimi, H. A.},
+  year = {2022},
+  journal = {Hydrology and Earth System Sciences},
+  volume = {26},
+  number = {9},
+  pages = {2387--2403},
+  doi = {10.5194/HESS-26-2387-2022}
+}
+
+@article{Westra2014,
+  author = {Westra, S. and Fowler, H. J. and Evans, J. P. and Alexander, L. V. and Berg, P. and Johnson, F. and Kendon, E. J. and Lenderink, G. and Roberts, N. M.},
+  title = {Future changes to the intensity and frequency of short-duration extreme rainfall},
+  journal = {Reviews of Geophysics},
+  volume = {52},
+  number = {3},
+  pages = {522--555},
+  year = {2014},
+  doi = {10.1002/2014RG000464}
+}
+
+@book{Wilks2020,
+  author = {Wilks, Daniel S.},
+  title = {Statistical {{Methods}} in the {{Atmospheric Sciences}}},
+  edition = {Fourth},
+  publisher = {Elsevier},
+  year = 2020,
+  isbn = {978-0-12-815823-4},
+}
+
+@article{WMO2024,
+  author = {WMO},
+  title = {State of the Global Climate 2023},
+  journal = {WMO-No.1347},
+  year = {2024}
+}
+
+@article{Zittis2021,
+  author = {Zittis, G. and Bruggeman, A. and Lelieveld, J.},
+  title = {Revisiting future extreme precipitation trends in the Mediterranean},
+  journal = {Weather and Climate Extremes},
+  volume = {34},
+  year = {2021},
+  doi = {10.1016/J.WACE.2021.100380}
+}
+
+@article{Zsoter2020,
+  author = {Zsoter, Ervin and Prudhomme, Christel and Stephens, Elisabeth and Pappenberger, Florian and Cloke, Hannah},
+  title = {Using Ensemble Reforecasts to Generate Flood Thresholds for Improved Global Flood Forecasting},
+  journal = {Journal of Flood Risk Management},
+  volume = {13},
+  number = {4},
+  year = 2020,
+  doi = {10.1111/jfr3.12658},
+}
